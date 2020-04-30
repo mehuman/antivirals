@@ -23,8 +23,8 @@ jobs:
     - name: search rdkit
       run: apt-cache search rdkit
     - name: Install setuptools
-      run: sudo apt-get install python3-setuptools
+      run: sudo apt-get install python-setuptools
     - name: Install RDKit
-      run: sudo apt-get install python3-rdkit librdkit1 rdkit-data
+      run: sudo apt-get install python-rdkit librdkit1 rdkit-data
     - name: Run Tests
-      run: python3 setup.py test
+      run: python setup.py test
