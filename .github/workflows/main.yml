@@ -6,7 +6,6 @@ name: CI
 # events but only for the master branch
 on:
   push:
-    branches: [ master ]
   pull_request:
     branches: [ master ]
 
@@ -20,4 +19,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Install RDKit
-      run: apt-get install python-rdkit librdkit1 rdkit-data
+      run: sudo apt-get install python-rdkit librdkit1 rdkit-data
