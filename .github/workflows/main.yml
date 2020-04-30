@@ -21,4 +21,4 @@ jobs:
     - name: Install RDKit
       run: sudo apt-get install python-rdkit librdkit1 rdkit-data
     - name: Run Tests
-      run: python setup.py test
+      run: python3 setup.py test
