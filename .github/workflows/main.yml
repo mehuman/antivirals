@@ -19,7 +19,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: update apt-get
-      run: apt-get update
+      run: sudo apt-get update
     - name: search rdkit
       run: apt-cache search rdkit
     - name: Install setuptools
