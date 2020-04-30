@@ -19,7 +19,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Install setuptools
-      run: sudo apt-get install python-setuptools
+      run: sudo apt-get install python3-setuptools
     - name: Install RDKit
       run: sudo apt-get install python-rdkit librdkit1 rdkit-data
     - name: Run Tests
